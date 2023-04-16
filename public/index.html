@@ -20,7 +20,7 @@
 	<meta name="theme-color" content="#2196f3">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="msapplication-tap-highlight" content="no">
-	<title>Login Demo</title>
+	<title>Login Page Library </title>
 	<link rel="apple-touch-icon" href="img/f7-icon-square.png">
 	<link rel="icon" href="img/f7-icon.png">
 	<link rel="stylesheet" href="./index.css">
@@ -35,7 +35,7 @@
 			<div class="page">
 				<nav class="navbar">
 					<div class="navbar-inner">
-						<h1 class="title sliding">Login Demo</h1>
+						<h1 class="title sliding">Login Page Library </h1>
 					</div>
 				</nav>
 				<main class="page-content">
@@ -50,7 +50,7 @@
 										data-login-screen=".loginYes">Sign In</a>
 								</p>
 							</div>
-							<p>this is a demo of a leaflet map, integrated with firebase for saving notes.</p>
+							<p>This is a Library for saving Details of Books.</p>
 						</div>
 						<div id="tab2" class="block tab">
 							<div class="row">&nbsp;<button id="logout" class="button button-raised">Logout</button>
@@ -58,10 +58,10 @@
 							<!-- Green FAB -->
 							<div class="fab fab-right-bottom color-green">
 								<a href="#" data-sheet=".my-sheet" class="sheet-open">
-									<i class="icon f7-icons">add</i>
+									<i class="icon f7-icons">Add</i>
 								</a>
 							</div>
-							<div id="groceryList">This is for the display of the grocery list</div>
+							<div id="bookList">This is for the display of the book list, a Library</div>
 						</div>
 					</div>
 				</main>
@@ -69,7 +69,7 @@
 					<div class="view">
 						<div class="page">
 							<div class="page-content login-screen-content">
-								<div class="login-screen-title">Login Demo</div>
+								<div class="login-screen-title">Login Page Library </div>
 								<form id="loginForm">
 									<div class="list">
 										<ul>
@@ -147,11 +147,11 @@
 						</div>
 					</div>
 				</div>
-				<!-- Grocery drawer -->
+				<!-- Library -->
 				<form id="addItem" class="sheet-modal my-sheet list">
 					<div class="toolbar">
 						<div class="toolbar-inner block">
-							<div class="left">Add a Grocery Item</div>
+							<div class="left">Add a Book with Details</div>
 							<p id="closeSave" class="segmented segmented-raised">
 								<a href="#" class="button sheet-close">Close
 								</a>
@@ -164,7 +164,7 @@
 							<li>
 								<div class="item-content item-input">
 									<div class="item-inner">
-										<label for="item" class="item-title item-label">Item:</label>
+										<label for="item" class="item-title item-label">Title:</label>
 										<div class="item-input-wrap">
 											<input id="item" type="text" name="item" placeholder="Item required" class="">
                                         </div>
@@ -174,9 +174,31 @@
 							<li>
 								<div class="item-content item-input">
 									<div class="item-inner">
-										<label for="store" class="item-title item-label">Store:</label>
+										<label for="author" class="item-title item-label">Author:</label>
 										<div class="item-input-wrap">
-											<input id="store" type="text" name="store" placeholder="Available at"
+											<input id="author" type="text" name="author" placeholder="Author is"
+												class="">
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item-content item-input">
+									<div class="item-inner">
+										<label for="genre" class="item-title item-label">Genre:</label>
+										<div class="item-input-wrap">
+											<input id="genre" type="text" name="genre" placeholder="Genre is"
+												class="">
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item-content item-input">
+									<div class="item-inner">
+										<label for="published" class="item-title item-label">Published:</label>
+										<div class="item-input-wrap">
+											<input id="published" type="text" name="published" placeholder="Published at"
 												class="">
 										</div>
 									</div>

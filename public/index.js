@@ -3,7 +3,7 @@ import "https://cdnjs.cloudflare.com/ajax/libs/firebase/7.16.0/firebase-app.min.
 import "https://cdnjs.cloudflare.com/ajax/libs/firebase/7.16.0/firebase-database.min.js";
 import "https://cdnjs.cloudflare.com/ajax/libs/firebase/7.16.1/firebase-auth.min.js";
 import app from "./F7App.js";
-import "./grocery.js";
+import "./library.js"
 
 const config = {
     apiKey: "AIzaSyCLUBV0fn4CNW6CoTPJXvKnDn6I1M3LHco",
