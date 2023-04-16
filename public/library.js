@@ -16,10 +16,9 @@ $$("#tab2").on("tab:show", () => {
         for(let n = 0; n < aKeys.length; n++){
             let sCard = `
             <div class="card">
-            <div class="card-content card-content-padding">${oItems[aKeys[n]].item}</div>
-            <div class="card-content card-content-padding">${oItems[aKeys[n]].author}</div>
-            <div class="card-content card-content-padding">${oItems[aKeys[n]].genre}</div>
-            <div class="card-content card-content-padding">${oItems[aKeys[n]].published}</div>
+            <div class="card-content card-content-padding">${oItems[aKeys[n]].item} [${oItems[aKeys[n]].author}, ${oItems[aKeys[n]].genre}, ${oItems[aKeys[n]].published}]</div>
+            <button class="bookButton" id="saveBook">I bought this</button>
+            <button class="bookButton" id="deleteBook">I don't need this</button>
             </div>
             `
             $$("#bookList").append(sCard);
