@@ -17,11 +17,13 @@ $$("#tab2").on("tab:show", () => {
             let checkId = aKeys[n];
             let sCard = `
             <div class="card">
+            <div><img class="iconImage" src="${oItems[aKeys[n]].bookImage}"></div>
             <div class="card-content card-content-padding" data-key="${checkId}">
-            <span class="${oItems[aKeys[n]].datePurchased ? 'strikethrough' : 'nostrikethrough'}">${oItems[aKeys[n]].item} 
+            <span class="${oItems[aKeys[n]].datePurchased ? 'strikethrough' : 'nostrikethrough'}">
+                                                                                ${oItems[aKeys[n]].item} 
                                                                                 [${oItems[aKeys[n]].author}, 
                                                                                 ${oItems[aKeys[n]].genre}, 
-                                                                                ${oItems[aKeys[n]].published}]</span>
+                                                                                ${oItems[aKeys[n]].published}]</span>                         
                 </div>
             <button class="bookButton" id="saveBook">I bought this</button>
             <button class="bookButton" id="deleteBook">I don't need this</button>

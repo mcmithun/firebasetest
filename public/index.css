@@ -9,21 +9,20 @@
     background-color: blue;
 }
 
-.card {
+
+  .card {
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
     grid-gap: 10px;
-    /* optional */
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
+  }
 
 .card-content {
-    flex: 1;
-    margin-right: 10px;
+    overflow-wrap: anywhere;
 }
 
 .bookButton {
@@ -33,6 +32,11 @@
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
+}
+
+.iconImage{
+    height: 40px;
+    width: 25px;
 }
 
 .bookButton:hover {
