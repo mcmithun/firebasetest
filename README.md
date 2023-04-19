@@ -1,7 +1,4 @@
-# Group 4
-Mithun Mohan
-Wondesen Zeleke
-Ann Solomon
+
 
 Firebase connection config is at Index.js.
 Functionalities implemented in library.js
